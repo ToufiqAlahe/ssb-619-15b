@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Bootstrap Form Validation</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">  
+  </head>
+  <body>
+
+<div class="container">
+ <h2 class="text-center p-2 bg-warning">Form section</h2>
+  <!--form-->
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-6">
+    <label for="first_name" class="form-label">First name</label>
+    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter your first name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">Please enter your first name</div>
+  </div>
+  <div class="col-md-6">
+    <label for="last_name" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter your last name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">Please enter your last name</div>
+  </div>
+  <div class="col-md-12">
+    <label for="email_address" class="form-label">Email</label>
+      <input type="email" class="form-control email" id="email_address" name="email_address" placeholder="Enter your email address" required>
+      <div class="invalid-feedback">
+        Please provide a valid email address.
+      </div>
+  </div>
+  <div class="col-md-6">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" name="city" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="state_name" class="form-label">State</label>
+    <select class="form-select" id="state_name" name="state_name" required>
+      <option selected disabled value="">Choose</option>
+      <option>Bangladesh</option>
+      <option>Nepal</option>
+      <option>Bhutan</option>
+      <option>China</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="invalidCheck" name="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+</div>
+
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
